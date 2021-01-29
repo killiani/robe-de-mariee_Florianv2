@@ -1,0 +1,43 @@
+@import 'variables';
+
+main .mod_article > .ce_accordion {
+  text-align: left;
+  margin: 10px auto;
+  .toggler {
+    position: relative;
+    padding: 12px 40px 12px 15px;
+    text-transform: uppercase;
+    color: white;
+    background-color: $bright_teal;
+    font-size: 19px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 250ms;
+    &:after {
+      content: '';
+      position: absolute;
+      right: 15px;
+      top: 10px;
+      width: 30px;
+      height: 30px;
+      background: url("../layout/arrow-down.svg") no-repeat;
+    }
+    &:hover {
+      background-color: $dark_teal;
+    }
+    &.active:after {
+      background-image: url("../layout/arrow-up.svg");
+    }
+  }
+  .accordion {
+    a {
+      color: $dark_teal;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: color 250ms;
+      &:hover {
+        color: $bright_teal;
+      }
+    }
+  }
+}

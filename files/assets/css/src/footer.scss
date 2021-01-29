@@ -1,0 +1,146 @@
+@import 'variables';
+
+footer {
+  background: $brightest_teal;
+
+}
+
+footer .inside {
+  position: relative;
+  //background: $brightest_teal;
+  @include bg;
+  background-position-y: 93px;
+  background-position-x: 55%;
+  background-size: 516px;
+  &:before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    border-top: 6px dotted $brightest_teal;
+  }
+}
+
+.home footer .inside {
+  transform: translateY(-85px);
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  max-width: $content_wide;
+  margin: 80px auto 0;
+  transform: translateY(-100px);
+  div {
+    align-self: center;
+  }
+}
+
+.footer-logo {
+  width: 150px;
+  margin: 0 auto;
+  transform: translateY(-65px);
+  img{
+    -webkit-box-shadow: 1px 0px 43px 0px rgba(237,1,126,0.35);
+    box-shadow: 1px 0px 43px 0px rgba(237,1,126,0.35);
+    border-radius: 50%;
+  }
+}
+
+.footer-left .mod_navigation ul {
+  width: 233px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  font-weight: bold;
+  li {
+    padding: 3px 0;
+    &:not(:last-child) {
+      border-bottom: 1px solid $middle_teal;
+    }
+    a,strong {
+      color: $middle_teal;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+    a {
+      transition: color 250ms;
+      &:hover {
+        color: $dark_teal;
+      }
+    }
+  }
+}
+
+.footer-info {
+  color: $dark_teal;
+  line-height: 1.2em;
+}
+
+.footer-social > a {
+  display: inline-block;
+  width: 40px;
+  margin-bottom: 20px;
+  transition: filter 250ms;
+  &:hover {
+    filter: opacity(0.4);
+  }
+}
+
+.footer-tel-mail {
+  margin-top: 20px;
+  td {
+    padding: 0 20px 0 0;
+  }
+  a {
+    color: $dark_teal;
+    text-decoration: none;
+  }
+}
+
+@media screen and (max-width: $smartphone) {
+  .home footer .inside {
+    transform: none;
+  }
+
+  .footer-content {
+    display: block;
+    position: relative;
+  }
+
+  .footer-address {
+    text-align: center;
+  }
+
+  .footer-tel-mail {
+    text-align: center;
+    td:first-child {
+      width: 50%;
+      text-align: right;
+    }
+    td:last-child {
+      text-align: left;
+    }
+  }
+
+  .footer-social {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .footer-left .mod_navigation,.footer-right {
+    padding-top: 50px;
+  }
+
+  .footer-tel-mail td {
+    padding: 0;
+  }
+}
+
+

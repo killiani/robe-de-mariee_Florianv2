@@ -1,0 +1,74 @@
+@import 'variables';
+
+.event-listpage,.news-page .mod_newslist {
+  width: 90%;
+  max-width: $content_wide;
+  margin: 0 auto;
+  .event,.layout_latest {
+    width: 90%;
+    max-width: 600px;
+    margin: 40px auto;
+    background: #d0e5e9;
+    padding: 10px 28px;
+    .ce_text {
+      width: 90%;
+    }
+    h2 {
+      margin: 20px 0;
+      background: none;
+      padding: 0;
+      text-transform: uppercase;
+      font-style: normal;
+      a {
+        text-decoration: none;
+        color: $dark_teal;
+        transition: filter 250ms;
+        &:hover {
+          filter: opacity(0.4);
+        }
+      }
+    }
+  }
+  .more {
+    a {
+      text-decoration: none;
+      color: $dark_teal;
+      text-transform: uppercase;
+      font-style: italic;
+      transition: filter 250ms;
+      &:hover {
+        filter: opacity(0.4);
+      }
+    }
+  }
+}
+
+.mod_eventreader,.mod_newsreader {
+  width: 90%;
+  max-width: $content_narrow;
+  margin: 0 auto;
+  .info {
+    text-transform: uppercase;
+    color: $dark_teal;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+  }
+  .back {
+    a {
+      text-decoration: none;
+      color: $dark_teal;
+      text-transform: uppercase;
+      font-style: italic;
+      transition: filter 250ms;
+      &:hover {
+        filter: opacity(0.4);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $smartphone) {
+  .event-listpage .event h2, .event-listpage .layout_latest h2, .news-page .mod_newslist .event h2, .news-page .mod_newslist .layout_latest h2 {
+    width: 90%;
+  }
+}

@@ -1,0 +1,18 @@
+$content_wide: 850px;
+$content_narrow: 600px;
+$bright_teal: #ffc6db;
+$brightest_teal: #fed8e4;
+$middle_teal: #e50090;
+$dark_teal: #e50090;
+$smartphone: 767px;
+$tablet: 1050px;
+
+$font: 'Open Sans';
+
+
+$watermark: url("../layout/robe-de-mariee-footer.svg");
+
+@mixin bg{
+  background: $watermark no-repeat, $brightest_teal;
+  //background: linear-gradient(left, rgba($grad_full, $opacity), rgba($grad_full, $opacity)), url($watermark) no-repeat;
+}
