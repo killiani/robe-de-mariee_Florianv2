@@ -11,6 +11,42 @@ main {
   }
 }
 
+
+.dotted-line{
+  margin: 50px auto;
+  border-bottom: 3px dotted #e50090;
+  max-width: $content_wide;
+}
+
+
+.flexbox_1{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  figure{
+    img{
+      border-radius: 50%;
+      max-width: 400px;
+      max-height: 400px;
+      object-fit: cover;
+    }
+  }
+}
+
+
+@media screen and (max-width: $content_wide){
+  .flexbox_1 figure img {
+    border-radius: unset;
+    max-width: unset;
+    max-height: unset;
+    width: 100%;
+  }
+  .dotted-line{
+    width: 90%;
+  }
+}
+
 .kleider-slider{
   max-width: 800px;
   max-height: 800px;

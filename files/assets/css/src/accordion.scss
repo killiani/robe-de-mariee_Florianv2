@@ -3,6 +3,7 @@
 main .mod_article > .ce_accordion {
   text-align: left;
   margin: 10px auto;
+  max-width: 600px;
   .toggler {
     position: relative;
     padding: 12px 40px 12px 15px;
@@ -39,5 +40,11 @@ main .mod_article > .ce_accordion {
         color: $bright_teal;
       }
     }
+  }
+}
+
+@media screen and (max-width: $content_wide){
+  main .mod_article > .ce_accordion {
+    width: 90%;
   }
 }
