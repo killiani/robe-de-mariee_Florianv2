@@ -3,11 +3,10 @@
   <component name="WebServers">
     <option name="servers">
       <webServer id="ad02d238-4746-4830-8082-54890d49e80b" name="Host" url="http://access847886222.webspace-data.io">
-        <fileTransfer host="access847886222.webspace-data.io" port="22" rootFolder="/contao49_10.12.2020" accessType="SFTP">
+        <fileTransfer rootFolder="/contao49_10.12.2020" accessType="SFTP" host="access847886222.webspace-data.io" port="22" sshConfigId="57c84459-0d93-487b-be6f-7174a107cdad" sshConfig="Host">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>
-          <option name="port" value="22" />
         </fileTransfer>
       </webServer>
     </option>
